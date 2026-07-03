@@ -62,7 +62,7 @@ const MainLayout: React.FC = () => {
     if (!currentUser) return;
     setNotifLoading(true);
     const token = localStorage.getItem('token');
-    fetch('http://localhost:5001/api/v1/notifications', {
+    fetch('https://3ee147.xhang.buaa.edu.cn:52811/api/v1/notifications', {
       headers: { 'Authorization': `Bearer ${token}` }
     })
       .then(r => r.json())
@@ -205,7 +205,7 @@ const MainLayout: React.FC = () => {
                   message.info('跳转至通知中心');
                 } else {
                   // 标记已读 - 调用后端API持久化
-                  fetch(`http://localhost:5001/api/v1/notifications/${key}/read`, {
+                  fetch(`https://3ee147.xhang.buaa.edu.cn:52811/api/v1/notifications/${key}/read`, {
                     method: 'POST',
                     headers: { 'Authorization': `Bearer ${localStorage.getItem('token')}` }
                   }).then(() => {

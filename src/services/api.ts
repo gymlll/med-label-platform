@@ -7,7 +7,7 @@ import type {
   AIModel, QualityMetric, AuditLog, PageResult, PageParams,
 } from '../types';
 
-const BASE_URL = 'http://localhost:5001/api/v1';
+const BASE_URL = 'https://3ee147.xhang.buaa.edu.cn:52811/api/v1';
 
 // ==================== 工具函数 ====================
 function getToken(): string | null {

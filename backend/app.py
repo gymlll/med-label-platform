@@ -65,6 +65,6 @@ def create_app():
 
 if __name__ == '__main__':
     app = create_app()
-    print('* 后端服务启动: http://localhost:5001')
-    print('* API 文档: http://localhost:5001/api/health')
-    app.run(host='0.0.0.0', port=5001, debug=True)
+    print('* 后端服务启动: http://localhost:5060')
+    print('* API 文档: http://localhost:5060/api/health')
+    app.run(host='0.0.0.0', port=5060, debug=True)

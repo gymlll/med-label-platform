@@ -20,7 +20,7 @@
 cd backend
 pip install flask flask-cors flask-sqlalchemy flask-jwt-extended werkzeug
 python seed.py      # 初始化种子数据（仅首次）
-python app.py       # 启动后端 → http://localhost:5001
+python app.py       # 启动后端 → http://localhost:5060
 ```
 
 ### 2. 启动前端
